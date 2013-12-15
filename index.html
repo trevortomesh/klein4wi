@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Fracis Klein for Governor
+</title>
+
+<link rel="icon" 
+      type="image/jpg" 
+      href="logo.jpg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+
+
+<!------------ CSS-------------->
+
+<style>
+
+@media screen and (orientation:landscape) {
+
+html { 
+  background: url("bg2.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+}
+
+@media screen and (orientation:portrait) {
+    /* Portrait styles */
+html{
+  background: url("bg2-mobile.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+}
+
+
+
+@media screen and (min-width:761px){
+
+div.menu 
+  { 
+     
+  font-size: 150%;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+
+
+  }
+
+
+#content{
+	font-size:200%;
+  overflow:auto;
+  background-color:transparent;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+  min-width: auto;
+}
+   
+}
+
+@media screen and (max-width:760px){
+div.menu 
+  { 
+     
+  font-size: 70%;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+
+  }
+
+#content
+  {
+
+ font-size:100%;
+   overflow:auto;
+  background-color:transparent;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+  min-width: auto;
+
+  }
+   
+
+}
+
+@media screen and (max-width:600px){
+div.menu 
+  { 
+     
+  font-size: 7%;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+
+  }
+
+#content
+  {
+
+ font-size:75%;
+  overflow:auto;
+  background-color:transparent;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+  min-width: auto;
+  }
+
+}
+
+@media screen and (max-width:410px){
+
+div.menu 
+  { 
+     
+  font-size: 1%;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+
+  }
+
+#content
+  {
+
+ font-size:20%;
+  overflow:auto;
+  background-color:transparent;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+  min-width: auto;
+  }
+
+
+}
+
+
+
+
+body
+{
+position:absolute;
+
+font-size:100%;
+font-family: Helvetica, Arial, sans-serif;
+background-position: center center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 100% auto;
+margin:0;
+padding:0;
+height:86%;
+
+
+}
+
+
+div.mainContent
+  {
+  margin: 0 auto;
+  position: relative;
+  }
+
+
+div.menu
+  {
+  position: relative;
+  float:left;
+  width:20%;
+  height:20%;
+  }
+
+
+div.menu li
+  {
+  background-color:#2c3e50;
+  display: block;
+  padding: 10%;
+  border-style:solid;
+  border-width:2%;
+  border-color:black;
+  margin: 2% 5% 2% 5% 
+}
+
+
+div.menu a
+  { 
+     
+  font-size: 70%;
+  position: relative;
+  display:block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  }
+
+
+div.menu a:hover{
+  color:white;
+}
+
+
+div#content
+  {
+  
+  overflow:auto;
+  background-color:transparent;
+  min-height: 100%;
+  height: auto; /*min-height hack*/
+  height: 100%;   
+  min-width: auto;
+  }
+
+ #navbar ul { 
+	margin:0;
+	margin-bottom:0; 
+	padding: 1%; 
+	list-style-type: none; 
+	text-align: center;
+	width:105%;
+	background: linear-gradient(#444444,#000000);; 
+	} 
+ 
+#navbar ul li {  
+	display: inline; 
+	} 
+ 
+#navbar ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: #fff; 
+
+	} 
+ 
+#navbar ul li a:hover { 
+	color: #2980B9; 
+
+	} 
+
+
+#footer {
+
+	margin-bottom:0;
+
+}
+
+
+
+</style>
+
+
+
+
+
+	<!--link rel="stylesheet" type="text/css" href="css/style.css"/-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+<img src="logo.png" style="z-index:-1;" height=10% width=auto>
+
+
+<div class="mainContent">
+
+<div class="menu">
+
+<li id="menu_Home" style="background-color:#2980B9";><a href="#" title="Home" onClick="showpage('Home')";>Home</a></li>
+<li id="menu_About"><a href="#" title="About" onClick="showpage('About')";>About</a></li>
+<li id="menu_News"><a href="#" title="News" onClick="showpage('News')";>News</a></li>
+<li id="menu_Positions"><a href="#" title="Positions" onClick="showpage('Positions')";>Positions</a></li>
+<li id="menu_Supporters"><a href="#" title="Supporters" onClick="showpage('Supporters')";>Supporters</a></li>
+<li id="menu_Contribute" style="background-color:#16A085;"><a href="#" title="Contribute" onClick="showpage('Contribute')";>Contribute</a></li>
+</div>
+</div>
+
+<!--------- PAGE SWITCHER--------------------->
+<script type="text/javascript">
+
+  var oldPage = "Home";
+  var contentPage = document.getElementById("content")	
+
+  function showpage(currentPage){
+        var contentPage = document.getElementById("content")
+
+        
+
+	if(currentPage != "Home"){
+	  contentPage.style.backgroundColor= "rgba(236,240,241,0.9)";	
+	  contentPage.style.borderStyle="solid";
+	  contentPage.style.borderWidth="5px";
+          contentPage.style.borderColor="black";
+
+
+	}
+
+	else{
+
+	  contentPage.style.backgroundColor="transparent";
+	  contentPage.style.borderStyle="hidden";
+
+	
+	
+	}
+
+	
+	if(oldPage != currentPage){
+		
+
+		var d = document.getElementById(currentPage);
+		var newtab = document.getElementById('menu_'+currentPage);
+		var oldtab = document.getElementById('menu_'+oldPage);		
+
+		document.getElementById(oldPage).style.display = 'none';
+		
+		oldtab.style.backgroundColor= "#2c3e50";	
+       		newtab.style.backgroundColor= "#2980B9";
+
+		d.style.display = 'block';
+        	
+		if(oldPage == "Contribute"){
+			
+			oldtab.style.backgroundColor= "#16A085";
+		}
+		
+
+		
+        
+		oldPage = currentPage;
+                oldtab = newtab;
+
+	}	
+
+
+
+
+
+
+};
+
+
+
+
+</script>
+
+<!---------------------------- /PAGE SWITCHER --------------------------------------->
+
+
+
+
+
+<!--------------------------- CONTENT ------------------------------------------------>
+<div id="content">
+
+<!-------------------------- PAGE 1: HOME ------------------------------->
+
+
+<div id="Home" style="width:100%; display:block; margin-bottom:auto; text-shadow: black 0.1em 0.1em 0.2em" class=" "> 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div style="font-size:150%;" align="center"> 
+"The probability that we may fail in the struggle ought not to deter us from the support of a cause we believe to be just."<br>
+-Abraham Lincoln
+</div>
+
+
+</div>
+
+
+
+<!-------------------------- PAGE 2: ABOUT ------------------------------>
+
+
+  <div id="About" style="display:none; margin-bottom:auto;" class=" ">
+<img src="about.jpg" style="height:50%; width:auto; align:left; float:left; padding:2%;">
+	<div style="padding: 10px 50px; text-align:justify;">
+  Frank is a student of astrophysics at the University of Wisconsin Madison. He first became involved in politics as a Ward Captain during the 2008 presidential elections. As Frank's interests developed, he remained active by serving as an alderman while attending the 2011 session of Badger Boys state and later as chair of the collaboration committee for the Milwaukee Youth Council. Since then, he has been involved in the development of the Pirate Party in Wisconsin and serves as secretary of the UW Madison chapter of the American Civil Liberties Union (ACLU). Frank announced his candidacy for governor of Wisconsin in June 2013 and has been running a hard campaign since then. 
+      </div>
+      
+  </div>
+
+
+
+<!-------------------------- PAGE 3: NEWS ------------------------------->
+
+
+  <div id="News" style="display:none; margin-bottom:auto;" class=" ">NEWS SWEET NEWS. NEWS SWEET NEWS.  NEWS SWEET NEWS.  
+NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. 
+NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. 
+NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. 
+NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. 
+NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS. NEWS SWEET NEWS.  </div>
+
+
+
+
+
+
+<!-------------------------- SUPPORTERS PAGE ------------------------------>
+
+
+  <div id="Supporters" style="margin-bottom:auto; display:none;" class=" ">
+
+  This is where quotes from supporters will go once we have them. it will be a scrolling box thingie. This 
+  is just a place-holder to test the liquid-layout. :-)
+
+
+
+  </div>
+
+
+
+
+<!-------------------------- POSITIONS ------------------------------------->
+
+
+
+  <div id="Positions" style="margin-bottom:auto;display:none;" class=" ">Coming soon... To view the position papers released by Frank, Follow this link:  <a href="http://www.scribd.com/collections/4394440/Position-Papers">http://www.scribd.com/collections/4394440/Position-Papers</a>
+
+  </div>
+
+
+
+<!-------------------------- PAGE 5: CONTRIBUTE -------------------------->
+
+  <div id="Contribute" style="margin-bottom:auto;display:none" class=" ">
+  This campaign cannot function or continue without your help. Your generous contribution will go directly toward campaign costs that forward the message or honest government. Help give Madison the message that the people are fed up with partisanship and unrepresentative governance by donating $1, $5, $10 or even $20 today.
+
+
+
+
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<!-------------------- END OF SWITCHER-SPACE ------------------------> 
+</div>
+
+
+
+
+
+</body>
+ 
+
+
+<!-----------------------------------------FOOTER------------------------------------------->
+<footer>
+<div id="navbar"> 
+  <ul> 
+	<li><a href="#">LinkHere</a></li> 
+	<li><a href="#">LinkHere</a></li> 
+	<li><a href="#">LinkHere</a></li> 
+	<li><a href="#">LinkHere</a></li> 
+	<li><a href="#">LinkHere</a></li> 
+  </ul> 
+</div>
+
+</footer>
+</html>
